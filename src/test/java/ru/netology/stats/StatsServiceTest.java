@@ -36,11 +36,11 @@ class StatsServiceTest {
 
     @Test
     public void testminSales() {
-    StatsService service = new StatsService();
-    long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
-    long actual = service.minSales(sales);
-    long expected = 9;
-    Assertions.assertEquals(expected, actual);
+        StatsService service = new StatsService();
+        long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
+        long actual = service.minSales(sales);
+        long expected = 9;
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
@@ -51,6 +51,7 @@ class StatsServiceTest {
         long expected = 5;
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void testbelowAverageSum() {
         StatsService service = new StatsService();
